@@ -19,7 +19,7 @@ export const Container = styled(LinearGradient).attrs({
 export const ShowPasswordButton = styled.TouchableOpacity``;
 
 export const Icon = styled(Feather).attrs({
-  size: 24,
+  size: 30,
 })`
   margin-right: 20px;
   opacity: 0.6;
@@ -57,4 +57,12 @@ export const Email = styled.Text`
   font-family: 'Rubik_400Regular';
   font-size: ${RFValue(13)}px;
   color: #888D97;
+`;
+
+export const ClipboardButton = styled.TouchableOpacity`
+  margin-left: auto;
+`;
+
+export const DeleteButton = styled.TouchableOpacity`
+  margin-left: auto;
 `;

@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import { FlatList, FlatListProps } from 'react-native';
+import Feather from '@expo/vector-icons/Feather';
 
 import { RFValue } from 'react-native-responsive-fontsize';
 
@@ -36,6 +37,13 @@ export const TotalPassCount = styled.Text`
   color: #888D97;
 `;
 
+export const EditButton = styled.TouchableOpacity``;
+
+export const Icon = styled(Feather).attrs({
+  size: 24
+})`
+
+`;
 
 export const LoginList = styled(
   FlatList as new (props: FlatListProps<LoginListDataProps>) => FlatList<LoginListDataProps>
