@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 
-
 import {
   Container,
   AboutUser,
@@ -44,7 +43,7 @@ export function Header({ user }: HeaderProps) {
       style={{
         ...(user
           ? {
-            backgroundColor: '#1967FB'
+            backgroundColor: '#377D71'
           }
           : {
             backgroundColor: '#FFFFFF'
@@ -62,7 +61,7 @@ export function Header({ user }: HeaderProps) {
               </HelloMessage>
 
               <SecondaryMessage>
-                Sinta-se seguro aqui
+                Procure as suas senhas aqui
               </SecondaryMessage>
             </TextContainer>
           </AboutUser>
@@ -80,7 +79,7 @@ export function Header({ user }: HeaderProps) {
           <BackButton onPress={goBack}>
             <Icon
               name="chevron-left"
-              color="#1967FB"
+              color="#377D71"
               size={28}
             />
           </BackButton>

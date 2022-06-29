@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import 'react-native-gesture-handler';
 import { StatusBar, View } from 'react-native';
 import {
   useFonts,
