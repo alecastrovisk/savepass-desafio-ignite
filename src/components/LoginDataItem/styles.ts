@@ -19,7 +19,7 @@ export const Container = styled(LinearGradient).attrs({
 export const ShowPasswordButton = styled.TouchableOpacity``;
 
 export const Icon = styled(Feather).attrs({
-  size: 30,
+  size: 24,
 })`
   margin-right: 20px;
   opacity: 0.6;

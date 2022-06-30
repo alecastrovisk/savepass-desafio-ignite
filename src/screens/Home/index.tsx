@@ -67,7 +67,7 @@ export function Home() {
 
   useFocusEffect(useCallback(() => {
     loadData();
-  }, []));
+  }, [data]));
 
   return (
     <>

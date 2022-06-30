@@ -31,13 +31,12 @@ export function LoginDataItem({
   service_name,
   email,
   password,
-  isEditing
+  isEditing,
 }: Props) {
   const [passIsVisible, setPassIsVisible] = useState(false);
 
   function handleTogglePassIsVisible() {
     setPassIsVisible(!passIsVisible);
-    
   }
 
   async function copyEmailToClipboard() {
@@ -50,19 +49,14 @@ export function LoginDataItem({
     Alert.alert('Senha copiada! 🔢');
   }
 
-  async function handleDeleteLoginDataItem({ id }: Props) {
+  async function handleDeleteLoginDataItem() {
     const dataKey = '@savepass:logins';
     const data = await AsyncStorage.getItem(dataKey);
     const parsedData = data ? JSON.parse(data) : [];
 
-    const newData = parsedData.filter((item: any) => item.id !== id);
+    const newData = parsedData.filter((login: Props) => login.id !== id);
     console.log(newData);
-    const dataFormatted = [
-      ...newData,
-    ];
-
-    await AsyncStorage.setItem(dataKey, JSON.stringify(dataFormatted));
-
+    await AsyncStorage.setItem(dataKey, JSON.stringify(newData));
   }
 
   return (
