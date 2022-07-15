@@ -20,7 +20,7 @@ To develop this application, I used some resources and concepts:
 - Expo Clipboard to copy and paste your password
 - React Navigation to navigate through the pages
 - Use State Hook to manage state on app
-- React Native resposive fontsize with RFVALUE for different devivces
+- React Native resposive fontsize with RFVALUE for different devices
 
 
 
